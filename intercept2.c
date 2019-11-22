@@ -17,7 +17,7 @@ MODULE_LICENSE("GPL");
 // tomar la direccion de sys_call_table
 //realizar cada vez que se reinicie el sistema puesto que la direccion cambia
 
-unsigned long *sys_call_table = (unsigned long*)0xffffffffbb6001c0;
+unsigned long *sys_call_table = (unsigned long*)0xffffffff8ca00200;
 
 //puntero de la funcion del sys_openat
 asmlinkage int (*real_unlinkat)(int DirFileDescriptor, char* path, int Flag);
